@@ -1,0 +1,14 @@
+server:
+  host: localhost
+  port: 5000
+
+mongo:
+  host: localhost
+  port: 27017
+  db: food_app
+  user:
+  pass:
+
+log:
+  location: C:\Users\mugiw\WebstormProjects\food-app-backend\logs
+  max_size: 40 # mb
