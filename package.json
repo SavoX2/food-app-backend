@@ -16,6 +16,7 @@
     "http-status-codes": "^2.1.4",
     "js-yaml": "^4.1.0",
     "mongoose": "^5.12.9",
+    "validator": "^13.6.0",
     "winston": "^3.3.3",
     "yargs": "^17.0.1"
   },

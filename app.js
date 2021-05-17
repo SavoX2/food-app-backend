@@ -57,7 +57,10 @@ transports = [];
 if (verbose) {
     transports.push(new winston.transports.Console());
 }
-transports.push(new winston.transports.File({'filename': `${config['log']['location']}/requests_log.json`}));
+transports.push(new winston.transports.File({
+    filename: `${config['log']['location']}/requests_log.json`,
+    maxsize: config['log']['max_size'] * 1000
+}));
 
 application.use(expressWinston.logger({
     transports,
