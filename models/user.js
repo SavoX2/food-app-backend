@@ -46,6 +46,11 @@ const userSchema = mongoose.Schema({
         required: [true, 'User password must be specified'],
         minLength: 64,
         maxLength: 64
+    },
+    active: {
+        type: Boolean,
+        required: false,
+        default: false
     }
 });
 
